@@ -38,9 +38,9 @@ class Api {
         
         print(url)
         
-        let params2 : Parameters = ["count": "2"]
+        let params : Parameters = ["count": "2"]
         
-        Api.sharedInstance.defaultManager.request(url, method: .post, parameters: params2, encoding: URLEncoding.httpBody, headers: ["Content-Type":"application/x-www-form-urlencoded"]).responseJSON { (response:DataResponse<Any>) in
+        Api.sharedInstance.defaultManager.request(url, method: .post, parameters: params, encoding: URLEncoding.httpBody, headers: ["Content-Type":"application/x-www-form-urlencoded"]).responseJSON { (response:DataResponse<Any>) in
             
             switch(response.result) {
             case .success(_):

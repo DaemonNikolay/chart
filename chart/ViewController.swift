@@ -10,11 +10,14 @@ import UIKit
 
 
 class ViewController: UIViewController {
-
+    
+    //    @IBOutlet weak var buttonGo: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let api = Api()
-        api.getPoints()
+        //        let api = Api()
+        //        api.getPoints()
     }
 }
