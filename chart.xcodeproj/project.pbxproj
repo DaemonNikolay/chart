@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		730BC792232E9DF900337365 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730BC791232E9DF900337365 /* Api.swift */; };
+		731A60F823314E6A00D4079B /* TableAndChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A60F723314E6A00D4079B /* TableAndChartController.swift */; };
+		731A60FD2331516A00D4079B /* TCs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731A60FC2331516A00D4079B /* TCs.storyboard */; };
+		731A60FF2331540600D4079B /* TCs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A60FE2331540600D4079B /* TCs.swift */; };
 		73C131C3232D599C00C84A72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C131C2232D599C00C84A72 /* AppDelegate.swift */; };
 		73C131C5232D599C00C84A72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C131C4232D599C00C84A72 /* ViewController.swift */; };
 		73C131C8232D599C00C84A72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73C131C6232D599C00C84A72 /* Main.storyboard */; };
 		73C131CA232D599D00C84A72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73C131C9232D599D00C84A72 /* Assets.xcassets */; };
-		73C131CD232D599D00C84A72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73C131CB232D599D00C84A72 /* LaunchScreen.storyboard */; };
 		AA566F088A0DBA21BB37419F /* Pods_chart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2F166696D8713A2E80BD47 /* Pods_chart.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,12 +22,14 @@
 		4303F047A47CD02E3A4AE6D5 /* Pods-chart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chart.release.xcconfig"; path = "Target Support Files/Pods-chart/Pods-chart.release.xcconfig"; sourceTree = "<group>"; };
 		5BCB4A043AAA8DB1285B5084 /* Pods-chart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chart.debug.xcconfig"; path = "Target Support Files/Pods-chart/Pods-chart.debug.xcconfig"; sourceTree = "<group>"; };
 		730BC791232E9DF900337365 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		731A60F723314E6A00D4079B /* TableAndChartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableAndChartController.swift; sourceTree = "<group>"; };
+		731A60FC2331516A00D4079B /* TCs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TCs.storyboard; sourceTree = "<group>"; };
+		731A60FE2331540600D4079B /* TCs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCs.swift; sourceTree = "<group>"; };
 		73C131BF232D599C00C84A72 /* chart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C131C2232D599C00C84A72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73C131C4232D599C00C84A72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		73C131C7232D599C00C84A72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73C131C9232D599D00C84A72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		73C131CC232D599D00C84A72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73C131CE232D599D00C84A72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA2F166696D8713A2E80BD47 /* Pods_chart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -58,6 +62,17 @@
 			path = Api;
 			sourceTree = "<group>";
 		};
+		731A60F9233150FA00D4079B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				73C131C4232D599C00C84A72 /* ViewController.swift */,
+				731A60F723314E6A00D4079B /* TableAndChartController.swift */,
+				731A60FC2331516A00D4079B /* TCs.storyboard */,
+				731A60FE2331540600D4079B /* TCs.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		73C131B6232D599C00C84A72 = {
 			isa = PBXGroup;
 			children = (
@@ -79,12 +94,11 @@
 		73C131C1232D599C00C84A72 /* chart */ = {
 			isa = PBXGroup;
 			children = (
+				731A60F9233150FA00D4079B /* ViewControllers */,
 				730BC790232E9DE300337365 /* Api */,
 				73C131C2232D599C00C84A72 /* AppDelegate.swift */,
-				73C131C4232D599C00C84A72 /* ViewController.swift */,
 				73C131C6232D599C00C84A72 /* Main.storyboard */,
 				73C131C9232D599D00C84A72 /* Assets.xcassets */,
-				73C131CB232D599D00C84A72 /* LaunchScreen.storyboard */,
 				73C131CE232D599D00C84A72 /* Info.plist */,
 			);
 			path = chart;
@@ -159,9 +173,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73C131CD232D599D00C84A72 /* LaunchScreen.storyboard in Resources */,
 				73C131CA232D599D00C84A72 /* Assets.xcassets in Resources */,
 				73C131C8232D599C00C84A72 /* Main.storyboard in Resources */,
+				731A60FD2331516A00D4079B /* TCs.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +229,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				730BC792232E9DF900337365 /* Api.swift in Sources */,
+				731A60F823314E6A00D4079B /* TableAndChartController.swift in Sources */,
 				73C131C5232D599C00C84A72 /* ViewController.swift in Sources */,
+				731A60FF2331540600D4079B /* TCs.swift in Sources */,
 				73C131C3232D599C00C84A72 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,14 +245,6 @@
 				73C131C7232D599C00C84A72 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		73C131CB232D599D00C84A72 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				73C131CC232D599D00C84A72 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
