@@ -2,7 +2,7 @@
 //  Api.swift
 //  chart
 //
-//  Created by Nikolay Eckert on 15/09/2019.
+//  Created by Nikolay Eckert on 20/09/2019.
 //  Copyright © 2019 Nikolay Eckert. All rights reserved.
 //
 
@@ -10,18 +10,20 @@ import Foundation
 import Alamofire
 
 
-
-// TODO: requires refactoring
-
 class Api {
-    private var baseUrl = "https://demo.bankplus.ru"
+    private static let _host: String = "demo.bankplus.ru"
     
-    static let sharedInstance = Api()
+    private var _baseUrl: String = "https://\(_host)"
+    var baseUrl: String  {
+        get { return self._baseUrl }
+    }
+    
+    static let sharedInstance = ApiPoints()
     
     
-    let defaultManager: Alamofire.SessionManager = {
+    let manager: Alamofire.SessionManager = {
         let serverTrustPolicies: [String: ServerTrustPolicy] = [
-            "demo.bankplus.ru": .disableEvaluation
+            _host: .disableEvaluation
         ]
         
         let configuration = URLSessionConfiguration.default
@@ -32,27 +34,4 @@ class Api {
             serverTrustPolicyManager: ServerTrustPolicyManager(policies: serverTrustPolicies)
         )
     }()
-    
-    public func getPoints() { // the solution works
-        let url = "\(baseUrl)/mobws/json/pointsList?version=1.1"
-        
-        print(url)
-        
-        let params : Parameters = ["count": "2"]
-        
-        Api.sharedInstance.defaultManager.request(url, method: .post, parameters: params, encoding: URLEncoding.httpBody, headers: ["Content-Type":"application/x-www-form-urlencoded"]).responseJSON { (response:DataResponse<Any>) in
-            
-            switch(response.result) {
-            case .success(_):
-                if response.result.value != nil{
-                    print("response : \(response)")
-                }
-                break
-                
-            case .failure(_):
-                print("Failure : \(response.result.error)")
-                break
-            }
-        }
-    }
 }

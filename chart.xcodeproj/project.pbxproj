@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		730BC792232E9DF900337365 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730BC791232E9DF900337365 /* Api.swift */; };
+		730BC792232E9DF900337365 /* ApiPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730BC791232E9DF900337365 /* ApiPoints.swift */; };
 		731A60F823314E6A00D4079B /* TableAndChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A60F723314E6A00D4079B /* TableAndChartController.swift */; };
-		731A60FD2331516A00D4079B /* TCs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731A60FC2331516A00D4079B /* TCs.storyboard */; };
-		731A60FF2331540600D4079B /* TCs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A60FE2331540600D4079B /* TCs.swift */; };
+		731DF996233755BF003B77DB /* ChartViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731DF995233755BF003B77DB /* ChartViewService.swift */; };
+		731DF9982337E3B6003B77DB /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731DF9972337E3B6003B77DB /* Toast.swift */; };
+		731DF99A2337EB11003B77DB /* InternetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731DF9992337EB11003B77DB /* InternetManager.swift */; };
+		734E05F02336C2B3005A5112 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734E05EF2336C2B3005A5112 /* ChartView.swift */; };
+		735750F42334C2EF00F79D00 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735750F32334C2EF00F79D00 /* Api.swift */; };
+		735750F923351E2600F79D00 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735750F823351E2600F79D00 /* Coordinate.swift */; };
 		73C131C3232D599C00C84A72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C131C2232D599C00C84A72 /* AppDelegate.swift */; };
-		73C131C5232D599C00C84A72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C131C4232D599C00C84A72 /* ViewController.swift */; };
+		73C131C5232D599C00C84A72 /* StartingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C131C4232D599C00C84A72 /* StartingController.swift */; };
 		73C131C8232D599C00C84A72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73C131C6232D599C00C84A72 /* Main.storyboard */; };
 		73C131CA232D599D00C84A72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73C131C9232D599D00C84A72 /* Assets.xcassets */; };
 		AA566F088A0DBA21BB37419F /* Pods_chart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2F166696D8713A2E80BD47 /* Pods_chart.framework */; };
@@ -21,13 +25,17 @@
 /* Begin PBXFileReference section */
 		4303F047A47CD02E3A4AE6D5 /* Pods-chart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chart.release.xcconfig"; path = "Target Support Files/Pods-chart/Pods-chart.release.xcconfig"; sourceTree = "<group>"; };
 		5BCB4A043AAA8DB1285B5084 /* Pods-chart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chart.debug.xcconfig"; path = "Target Support Files/Pods-chart/Pods-chart.debug.xcconfig"; sourceTree = "<group>"; };
-		730BC791232E9DF900337365 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		730BC791232E9DF900337365 /* ApiPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiPoints.swift; sourceTree = "<group>"; };
 		731A60F723314E6A00D4079B /* TableAndChartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableAndChartController.swift; sourceTree = "<group>"; };
-		731A60FC2331516A00D4079B /* TCs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TCs.storyboard; sourceTree = "<group>"; };
-		731A60FE2331540600D4079B /* TCs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCs.swift; sourceTree = "<group>"; };
+		731DF995233755BF003B77DB /* ChartViewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewService.swift; sourceTree = "<group>"; };
+		731DF9972337E3B6003B77DB /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		731DF9992337EB11003B77DB /* InternetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetManager.swift; sourceTree = "<group>"; };
+		734E05EF2336C2B3005A5112 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		735750F32334C2EF00F79D00 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		735750F823351E2600F79D00 /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 		73C131BF232D599C00C84A72 /* chart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C131C2232D599C00C84A72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		73C131C4232D599C00C84A72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		73C131C4232D599C00C84A72 /* StartingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingController.swift; sourceTree = "<group>"; };
 		73C131C7232D599C00C84A72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73C131C9232D599D00C84A72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73C131CE232D599D00C84A72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,7 +65,8 @@
 		730BC790232E9DE300337365 /* Api */ = {
 			isa = PBXGroup;
 			children = (
-				730BC791232E9DF900337365 /* Api.swift */,
+				730BC791232E9DF900337365 /* ApiPoints.swift */,
+				735750F32334C2EF00F79D00 /* Api.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -65,12 +74,37 @@
 		731A60F9233150FA00D4079B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				73C131C4232D599C00C84A72 /* ViewController.swift */,
+				734E05EE2336C285005A5112 /* ChartView */,
+				73C131C4232D599C00C84A72 /* StartingController.swift */,
 				731A60F723314E6A00D4079B /* TableAndChartController.swift */,
-				731A60FC2331516A00D4079B /* TCs.storyboard */,
-				731A60FE2331540600D4079B /* TCs.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		731DF99223373F14003B77DB /* Auxiliary */ = {
+			isa = PBXGroup;
+			children = (
+				731DF995233755BF003B77DB /* ChartViewService.swift */,
+				731DF9972337E3B6003B77DB /* Toast.swift */,
+				731DF9992337EB11003B77DB /* InternetManager.swift */,
+			);
+			path = Auxiliary;
+			sourceTree = "<group>";
+		};
+		734E05EE2336C285005A5112 /* ChartView */ = {
+			isa = PBXGroup;
+			children = (
+				734E05EF2336C2B3005A5112 /* ChartView.swift */,
+			);
+			path = ChartView;
+			sourceTree = "<group>";
+		};
+		735750F723351E0B00F79D00 /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				735750F823351E2600F79D00 /* Coordinate.swift */,
+			);
+			path = Structures;
 			sourceTree = "<group>";
 		};
 		73C131B6232D599C00C84A72 = {
@@ -94,6 +128,8 @@
 		73C131C1232D599C00C84A72 /* chart */ = {
 			isa = PBXGroup;
 			children = (
+				731DF99223373F14003B77DB /* Auxiliary */,
+				735750F723351E0B00F79D00 /* Structures */,
 				731A60F9233150FA00D4079B /* ViewControllers */,
 				730BC790232E9DE300337365 /* Api */,
 				73C131C2232D599C00C84A72 /* AppDelegate.swift */,
@@ -175,7 +211,6 @@
 			files = (
 				73C131CA232D599D00C84A72 /* Assets.xcassets in Resources */,
 				73C131C8232D599C00C84A72 /* Main.storyboard in Resources */,
-				731A60FD2331516A00D4079B /* TCs.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,11 +263,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				730BC792232E9DF900337365 /* Api.swift in Sources */,
+				730BC792232E9DF900337365 /* ApiPoints.swift in Sources */,
 				731A60F823314E6A00D4079B /* TableAndChartController.swift in Sources */,
-				73C131C5232D599C00C84A72 /* ViewController.swift in Sources */,
-				731A60FF2331540600D4079B /* TCs.swift in Sources */,
+				731DF996233755BF003B77DB /* ChartViewService.swift in Sources */,
+				73C131C5232D599C00C84A72 /* StartingController.swift in Sources */,
+				734E05F02336C2B3005A5112 /* ChartView.swift in Sources */,
+				735750F42334C2EF00F79D00 /* Api.swift in Sources */,
 				73C131C3232D599C00C84A72 /* AppDelegate.swift in Sources */,
+				731DF9982337E3B6003B77DB /* Toast.swift in Sources */,
+				731DF99A2337EB11003B77DB /* InternetManager.swift in Sources */,
+				735750F923351E2600F79D00 /* Coordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
