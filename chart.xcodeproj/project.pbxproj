@@ -74,7 +74,7 @@
 		731A60F9233150FA00D4079B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				734E05EE2336C285005A5112 /* ChartView */,
+				734E05EE2336C285005A5112 /* Views */,
 				73C131C4232D599C00C84A72 /* StartingController.swift */,
 				731A60F723314E6A00D4079B /* TableAndChartController.swift */,
 			);
@@ -91,12 +91,12 @@
 			path = Auxiliary;
 			sourceTree = "<group>";
 		};
-		734E05EE2336C285005A5112 /* ChartView */ = {
+		734E05EE2336C285005A5112 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				734E05EF2336C2B3005A5112 /* ChartView.swift */,
 			);
-			path = ChartView;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		735750F723351E0B00F79D00 /* Structures */ = {

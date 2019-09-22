@@ -14,6 +14,7 @@ class TableAndChartController: UIViewController, UITableViewDelegate, UITableVie
     
     @IBOutlet weak var tablePoints: UITableView!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var chartView: ChartView!
     
     let cellReuseIdentifier = "cell"
     
@@ -23,6 +24,16 @@ class TableAndChartController: UIViewController, UITableViewDelegate, UITableVie
         set { _points = newValue }
     }
     
+    
+    @IBAction func saveChartButton(_ sender: UIBarButtonItem) {
+        let renderer = UIGraphicsImageRenderer(size: view.bounds.size)
+        let image = renderer.image { ctx in
+            self.chartView.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
+        }
+        
+        let selector = #selector(image(_:didFinishSavingWithError:contextInfo:))
+        UIImageWriteToSavedPhotosAlbum(image, self, selector, nil)
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return points.count
@@ -46,6 +57,20 @@ class TableAndChartController: UIViewController, UITableViewDelegate, UITableVie
         
         return cell
     }
+
+    @objc private func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        if let error = error {
+            showAlertWith(title: "Save error", message: error.localizedDescription)
+        } else {
+            showAlertWith(title: "Saved!", message: "Your image has been saved to your photos.")
+        }
+    }
+    
+    private func showAlertWith(title: String, message: String){
+        let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "OK", style: .default))
+        present(ac, animated: true)
+    }
     
     private func scrollViewContentSizeChange() {
         if UIDevice.current.orientation.isLandscape {
@@ -57,7 +82,7 @@ class TableAndChartController: UIViewController, UITableViewDelegate, UITableVie
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
-    
+        
         self.scrollViewContentSizeChange()
     }
     

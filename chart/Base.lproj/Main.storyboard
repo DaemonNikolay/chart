@@ -104,8 +104,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ygR-WZ-lnp"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vsq-Xd-wTG"/>
+                    <navigationItem key="navigationItem" id="vsq-Xd-wTG">
+                        <barButtonItem key="rightBarButtonItem" title="Save chart" style="plain" id="msJ-xR-tAr">
+                            <connections>
+                                <action selector="saveChartButton:" destination="jz2-fZ-B2j" id="22N-hg-GnV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="chartView" destination="K2L-Km-Gdg" id="ocC-Bf-5uo"/>
                         <outlet property="scrollView" destination="fIQ-qW-IQu" id="WbD-wP-hoY"/>
                         <outlet property="tablePoints" destination="AuC-eF-maU" id="9AF-1f-buq"/>
                     </connections>
